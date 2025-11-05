@@ -1,6 +1,3 @@
-# Install required libraries
-pip install streamlit pandas scikit-learn
-
 import streamlit as st
 import pickle
 import pandas as pd
