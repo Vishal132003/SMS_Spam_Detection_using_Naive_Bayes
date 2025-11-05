@@ -3,15 +3,13 @@ import pickle
 import pandas as pd
 from sklearn.feature_extraction.text import CountVectorizer
 
-# Load trained model and vectorizer
+# Load the trained model and vectorizer
 try:
     with open('model.pkl', 'rb') as f:
         model = pickle.load(f)
 
-    # Placeholder vectorizer (replace with your trained vectorizer)
-    cv = CountVectorizer(stop_words="english")
-    sample_messages = ["sample message one", "sample message two", "spam message three"]
-    cv.fit(sample_messages)
+    with open('vectorizer.pkl', 'rb') as f:
+        cv = pickle.load(f)
 
 except FileNotFoundError:
     st.error("Model or Vectorizer file not found. Please make sure 'model.pkl' and 'vectorizer.pkl' are in the correct directory.")
