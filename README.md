@@ -3,7 +3,8 @@
 ## Overview
 This project predicts whether an SMS message is spam or not using the Naive Bayes algorithm.  
 The model is trained on a labeled dataset of text messages, where each message is categorized as either "ham" (not spam) or "spam".  
-It helps automatically filter unwanted or promotional messages from genuine ones.
+It helps automatically filter unwanted or promotional messages from genuine ones.  
+You can access the deployed web app here: SMS Spam Detection App:-https://smsspamdetectionusingnaivebayes-4pc5fdq4oiksrfvhumn9bm.streamlit.app/
 
 ---
 
@@ -28,15 +29,15 @@ Since the dataset contains word count data, MultinomialNB performs better than G
 ---
 
 ## Steps Performed
-1. Imported the required libraries.
-2. Loaded the dataset and checked its structure.
-3. Removed duplicate rows using `df.drop_duplicates(inplace=True)` and verified there were no missing values.
-4. Encoded the labels: 'ham' as 0 and 'spam' as 1.
-5. Converted text into numeric form using CountVectorizer.
-6. Split the dataset into training and testing sets with a test size of 20% and random_state=42.
-7. Trained the MultinomialNB model on the training data.
-8. Evaluated the model using accuracy score, confusion matrix, and classification report.
-9. Tested the model on new input messages.
+1. Imported the required libraries.  
+2. Loaded the dataset and checked its structure.  
+3. Removed duplicate rows using `df.drop_duplicates(inplace=True)` and verified there were no missing values.  
+4. Encoded the labels: 'ham' as 0 and 'spam' as 1.  
+5. Converted text into numeric form using CountVectorizer.  
+6. Split the dataset into training and testing sets with a test size of 20% and random_state=42.  
+7. Trained the MultinomialNB model on the training data.  
+8. Evaluated the model using accuracy score, confusion matrix, and classification report.  
+9. Tested the model on new input messages.  
 
 ---
 
